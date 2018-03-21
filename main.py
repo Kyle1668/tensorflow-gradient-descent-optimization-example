@@ -10,9 +10,9 @@ opt = tf.train.GradientDescentOptimizer(0.1).minimize(y)
 init = tf.global_variables_initializer()
 session.run(init)
 
-for i in range(1, 101):
+for i in range(1, 555):
 	s = session.run([opt, x, y])	
-	print("-------------------------------")
+	print("-------------------------------------------------------------------")
 	print("Iteration: ", i)
 	print("Optimizer: ",  s[0])	
 	print("X: ", s[1])
